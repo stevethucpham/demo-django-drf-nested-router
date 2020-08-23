@@ -36,7 +36,7 @@ class Book(models.Model):
     # tags = models.ManyToManyField('Tag')
 
     def __str__(self):
-        return self.name
+        return self.title
 
     def get_page_count(self):
         return self.pages.count()
