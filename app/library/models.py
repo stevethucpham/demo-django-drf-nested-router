@@ -33,7 +33,7 @@ class Book(models.Model):
         on_delete=models.CASCADE,
         related_name='books',
     )
-    # tags = models.ManyToManyField('Tag')
+    authors = models.ManyToManyField('Author')
 
     def __str__(self):
         return self.title
@@ -49,7 +49,6 @@ class Page(models.Model):
         on_delete=models.CASCADE,
         related_name='pages',
     )
-    # Unlike CharField, TextField does not limit 255 max length
     text = models.TextField(null=True, blank=True)
     page_number = models.IntegerField()
 
