@@ -18,5 +18,5 @@ The dependencies of the project has been attached in the `requirements.txt`.
 * drf-nested-routers==0.91
 
 ### Results
-![Library API](images/library_list.png)
-![Book API](images/book_list.png)
+![Library API](images/library_api.png)
+![Book API](images/book_api.png)
