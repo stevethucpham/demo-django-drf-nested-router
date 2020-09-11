@@ -24,7 +24,7 @@ class BookViewSet(viewsets.ModelViewSet):
     serializer_class = BookSerializer
     
     def get_queryset(self, *args, **kwargs):
-        library_id = self.kwargs.get("library_id")
+        library_id = self.kwargs.get("library_pk")
         try:
             library = Library.objects.get(id=library_id)
         except Library.DoesNotExist:
